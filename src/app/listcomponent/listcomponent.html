@@ -1,0 +1,10 @@
+<p>list-component works!</p>
+<ul>
+    <li *ngFor="let president of presidents">{{president.name}} {{president.term}}</li> <!-- Ways to make loop but need to import CommonModule-->
+</ul>
+
+<ol>
+    @for(president of presidents;track president) { <!-- Ways to make new loop-->
+        <li>{{president.name}}  {{president.term}}</li>
+    }
+</ol>
